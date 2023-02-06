@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>登録情報</h1>
+
+<div id="registers" class='scaffold_table'>
+  <% @registers.each do |register| %>
+    <%= render register %>
+    <p>
+      <%= link_to "詳細", register %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "新規登録", new_register_path %>

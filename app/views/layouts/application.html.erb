@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample1App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <header>
+    <div class="header-logo">
+      <a href="/">Sample1App</a>
+    </div>
+    <ul class="header-menus">
+      <li>
+        <a href="/about">about</a>
+      </li>
+      <li>
+        <%= link_to("新規登録","/registers") %>
+      </li>
+    </ul>
+  </header>
+
+  <body>
+    <div class="main posts-index">
+        <%= yield %>
+    </div>
+  </body>
+
+</html>

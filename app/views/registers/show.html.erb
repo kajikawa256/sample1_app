@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @register %>
+
+<div>
+  <%= link_to "編集", edit_register_path(@register) %> |
+  <%= link_to "戻る", registers_path %>
+
+  <%= button_to "このデータを削除する", @register, method: :delete %>
+</div>
